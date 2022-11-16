@@ -1,0 +1,41 @@
+.about {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 0;
+  }
+
+  &__title {
+    margin: 0 0 70px 0;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__item {
+    margin: 0 10px 20px 10px;
+  }
+
+  &__cart {
+    text-align: center;
+  }
+
+  &__image {
+  }
+
+  &__cart-title {
+  }
+
+  &__descr {
+    max-width: 290px;
+  }
+}
+
+.title {
+}
