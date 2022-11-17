@@ -4,11 +4,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 150px 0;
+    padding: 150px 0 0 0;
   }
 
   &__title {
-    margin: 0 0 100px 0;
+    margin: 0 0 130px 0;
   }
 
   &__list {
@@ -16,6 +16,7 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
+	 margin-bottom: 70px;
   }
 
   &__item {
@@ -37,6 +38,29 @@
 
   &__descr {
     max-width: 290px;
+  }
+  &__success{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	margin-bottom: 50px;
+  }
+  &__success-item {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 30%;
+	height: 100px;
+	background-color: var(--green-color);
+	padding: 10px ;
+	margin: 0 20px;
+	font-size: 28px;
+	span{
+		font-size: 48px;
+		font-weight: 700;
+		margin-right: 30px;
+	}
   }
 }
 

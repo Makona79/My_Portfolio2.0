@@ -112,6 +112,7 @@ a {
 	font-size: 48px;
 	color: var(--mainblack-color);
 	font-weight: 700;
+	text-transform: uppercase;
 	&::after{
 	content: '';
 	position: absolute;

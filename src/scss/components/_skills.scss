@@ -1,0 +1,94 @@
+.skills {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0 0 0;
+	 margin-bottom: 50px;
+  }
+
+  &__title {
+    margin: 0 0 130px 0;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+	 
+  }
+
+  &__item {
+    margin: 0 10px 20px 10px;
+  }
+
+  &__cart {
+    text-align: center;
+  }
+
+  &__image {
+	margin: 0 0 30px 0;
+  }
+
+  
+  &__list-main{
+	margin-bottom: 70px;
+  }
+  &__list-sup{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 50px;
+  }
+  &__item-sup{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;	
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	background-color: var(--green-color);
+	span{
+		max-width: 65px;
+		
+	}
+  }
+  &__rate{
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+  }
+  &__star{
+	margin: 0 5px;
+	svg{
+		width: 25px;
+		height: 25px;
+	}
+  }
+&__star-sup{
+	margin: 0 3px;
+	svg{
+		width: 15px;
+		height: 15px;
+	}
+}
+   &__star-stroke{	
+	fill: #fac917;
+  }
+  &__boxitem-sup{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+  &__item-sup{
+	margin-bottom: 20px;
+  }
+ 
+}
+
+
