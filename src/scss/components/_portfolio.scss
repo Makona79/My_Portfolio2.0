@@ -17,7 +17,10 @@
   // .portfolio__content
 
   &__content {
-	display: grid;
+    display: grid;
+    grid-template-columns: repeat (auto-fit, minmax(480px, 1fr));
+  }
+  &__block{
 	
   }
 }
