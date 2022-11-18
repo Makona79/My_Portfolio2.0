@@ -69,38 +69,9 @@
   }
 
   &__button {
-    position: relative;
-    width: 270px;
-    height: 60px;
-    background-color: transparent;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-
-    span {
-      position: relative;
-      color: #fff;
-      z-index: 2;
-      font-size: 18px;
-    }
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0px;
-      width: 20px;
-      height: 60px;
-      background-color: #faaf52;
-      transition: width 0.3s ease-in-out;
-    }
-    &:hover {
-      &::before {
-        width: 100%;
-        transition: width 0.3s ease-in-out;
-      }
-    }
+  margin-bottom: 20px;
   }
-  &__sci {   
+  &__sci {
     margin: 0 0 50px 0;
   }
 
