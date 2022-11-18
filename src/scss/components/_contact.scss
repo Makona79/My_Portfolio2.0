@@ -1,24 +1,106 @@
 .contact {
-	background-color: #252934;
-	&__container{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 50px 0;
-	}
-	// .contact__title
+  background-color: #252934;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0;
+  }
+  // .contact__title
 
-	&__title {
-	}
+  &__title {
+    margin: 0 0 90px 0;
+    color: #fff;
+    &::after {
+      background-color: #fff;
+    }
+  }
 
-	// .contact__descr
+  // .contact__descr
 
-	&__descr {
-	}
+  &__descr {
+    margin: 0 0 50px;
+    color: #04c2c9;
+    //  color: var(--second-text);
+  }
 
-	// .contact__form
+  // .contact__form
 
-	&__form {
-	}
+  &__form {
+  }
+
+  &__button {
+    position: relative;
+    width: 270px;
+    height: 60px;
+    background-color: transparent;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--second-text);
+    padding: 13px 25px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    align-self: flex-end;
+    margin: 0 0 50px 0;
+    span {
+      color: #fff;
+      z-index: 2;
+      font-size: 20px;
+      font-family: inherit;
+    }
+    &:hover {
+      background-color: #fff;
+      span {
+        color: var(--mainblack-color);
+      }
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input {
+  margin-bottom: 20px;
+}
+
+.textarea {
+  margin-bottom: 70px;
+}
+
+.form__label {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.input {
+  border: 1px solid var(--second-text);
+  border-radius: 4px;
+  padding: 0 20px;
+  width: 900px;
+  height: 70px;
+  font-family: inherit;
+  color: #fff;
+  background-color: transparent;
+}
+
+.input::placeholder {
+  color: var(--second-text);
+}
+
+.textarea {
+  border: 1px solid var(--second-text);
+  border-radius: 4px;
+  padding: 20px;
+  width: 900px;
+  font-family: inherit;
+  color: #fff;
+  background-color: transparent;
+}
+
+.textarea::placeholder {
+  color: var(--second-text);
 }
