@@ -83,4 +83,4 @@ console.log(mobileCheck())
 //   console.log('Произошла отправка, тут можно писать любые действия');
 // };
 
-// validateForms('.form-1', rules1, afterForm);
+// validateForms('.form', rules1, afterForm);
