@@ -50,6 +50,7 @@
       font-family: inherit;
     }
     &:hover {
+      box-shadow: 0 0 10px var(--light-color);
       background-color: #fff;
       span {
         color: var(--mainblack-color);
@@ -66,10 +67,17 @@
 
 .input {
   margin-bottom: 20px;
+  transition: box-shadow 0.5s ease 0s;
+  &:focus {
+    box-shadow: 0 0 10px var(--light-color);
+  }
 }
 
 .textarea {
   margin-bottom: 70px;
+  &:focus {
+    box-shadow: 0 0 10px var(--light-color);
+  }
 }
 
 .form__label {
