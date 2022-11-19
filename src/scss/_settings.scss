@@ -132,10 +132,11 @@ a {
 }
 .link-sci {
   position: relative;
-  opacity: 0.5;
+  //opacity: 0.8;
   color: #fff;
   font-size: 2em;
-  transition: opacity 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  z-index: 12;
   span {
     position: absolute;
     top: -150%;
