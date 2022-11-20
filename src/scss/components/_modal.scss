@@ -27,10 +27,14 @@
     border: 1px solid var(--second-text);
     box-shadow: 0 0 15px #000;
     margin: 0 0 30px;
+    transition: box-shadow 0.3s ease-in-out;
     img {
       position: absolute;
       inset: 0;
       object-fit: cover;
+    }
+    &:hover {
+      box-shadow: 0 0 25px #000;
     }
   }
   &__box {
@@ -54,6 +58,7 @@
     font-size: 48px;
     font-weight: 700;
     margin: 0 0 20px;
+    text-transform: uppercase;
   }
   &__descr {
     font-size: 20px;
