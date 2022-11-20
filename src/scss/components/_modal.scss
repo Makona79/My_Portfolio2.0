@@ -18,6 +18,9 @@
     justify-content: flex-start;
     align-items: center;
     padding: 20px;
+    @media (max-width: 480px) {
+      padding: 10px;
+    }
   }
   &__image {
     position: relative;
@@ -28,6 +31,7 @@
     box-shadow: 0 0 15px #000;
     margin: 20px 0 30px;
     transition: box-shadow 0.3s ease-in-out;
+
     img {
       position: absolute;
       inset: 0;
@@ -35,6 +39,26 @@
     }
     &:hover {
       box-shadow: 0 0 25px #000;
+    }
+    @media (max-width: 1024px) {
+      width: 650px;
+      height: 350px;
+    }
+    @media (max-width: 768px) {
+      width: 500px;
+      height: 280px;
+    }
+    @media (max-width: 600px) {
+      width: 400px;
+      height: 220px;
+    }
+    @media (max-width: 480px) {
+      width: 300px;
+      height: 160px;
+    }
+    @media (max-width: 360px) {
+      width: 250px;
+      height: 120px;
     }
   }
   &__box {
@@ -127,7 +151,7 @@
   text-align: left;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1150px) {
   .modal__container {
     width: 90%;
   }

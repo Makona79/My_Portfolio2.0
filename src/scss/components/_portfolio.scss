@@ -15,7 +15,6 @@
 
   &__title {
     margin: 0 0 100px 0;
-
   }
 
   // .portfolio__content
@@ -26,6 +25,9 @@
     gap: 30px;
     width: 100%;
     margin: 0 0 100px 0;
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
   &__block {
     position: relative;
@@ -36,6 +38,21 @@
     &:hover {
       transform: scale(1.05);
       box-shadow: 20px 15px 15px #097d07;
+    }
+    @media (max-width: 1440px) {
+      height: 300px;
+    }
+    @media (max-width: 1024px) {
+      height: 250px;
+    }
+    @media (max-width: 768px) {
+      height: 350px;
+    }
+    @media (max-width: 576px) {
+      height: 250px;
+    }
+    @media (max-width: 480px) {
+      height: 200px;
     }
   }
   &__image {

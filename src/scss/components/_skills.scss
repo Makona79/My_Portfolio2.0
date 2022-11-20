@@ -6,6 +6,9 @@
     align-items: center;
     padding: 120px 0 0 0;
     margin-bottom: 50px;
+    @media (max-width: 768px) {
+      padding: 50px 0 0 0;
+    }
   }
 
   &__title {
@@ -14,6 +17,7 @@
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -85,6 +89,7 @@
     align-items: center;
     padding: 15px;
     box-shadow: 5px 5px 10px #056748;
+    margin-bottom: 20px;
   }
   &__item-sup {
     margin-bottom: 20px;

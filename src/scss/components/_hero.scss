@@ -1,6 +1,7 @@
 .hero {
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 600px;
   display: flex;
   background-color: #e7e7ea;
   overflow: hidden;
@@ -8,21 +9,35 @@
   &::after {
     content: "";
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     background-color: #f85555;
-
     transform: rotate(-45deg);
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
   &::before {
-    top: -17%;
-    left: -7%;
+    top: -35%;
+    left: -20%;
     z-index: 1001;
+    @media (max-width: 1400px) {
+      top: -40%;
+    }
+    @media (max-width: 1200px) {
+      top: -45%;
+    }
   }
   &::after {
-    bottom: -17%;
-    right: -7%;
+    bottom: -35%;
+    right: -20%;
     z-index: 10;
+    @media (max-width: 1400px) {
+      bottom: -40%;
+    }
+    @media (max-width: 1200px) {
+      bottom: -45%;
+    }
   }
   &__container {
     display: flex;
@@ -39,6 +54,12 @@
       bottom: 0;
       left: 0;
       background-color: #d9d9d9;
+      @media (max-width: 1200px) {
+        height: 50px;
+      }
+      @media (max-width: 1024px) {
+        display: none;
+      }
     }
   }
   &__bg {
@@ -88,24 +109,39 @@
     font-size: 86px;
     color: #fff;
     font-weight: 700;
+    @media (max-width: 1024px) {
+      font-size: 48px;
+    }
+    @media (max-width: 576px) {
+      font-size: 36px;
+    }
   }
 
   &__descr {
     font-weight: 500;
     font-size: 48px;
     color: #ffe4b5;
+    @media (max-width: 1024px) {
+      font-size: 32px;
+    }
+    @media (max-width: 576px) {
+      font-size: 24px;
+    }
   }
 
-  &__button {
+  &__link {
     margin-bottom: 20px;
   }
   &__sci {
     margin: 0 0 110px 0;
+	 @media (max-width: 1024px) {
+      margin: 0 0 50px;
+    }
+    
   }
 
   &__item {
-    padding: 0 20px;
-    margin: 0 20px;
+   
     svg {
       transition: all 0.8s ease 0s;
       fill: rgba(255, 255, 255, 0.6);
@@ -115,5 +151,6 @@
         fill: #fff;
       }
     }
+  
   }
 }
