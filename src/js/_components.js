@@ -1,3 +1,3 @@
 
 import './components/modal';
-import './components/form';
+// import './components/goto';
