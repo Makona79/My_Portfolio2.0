@@ -230,9 +230,9 @@ a {
     transition: width 0.3s ease-in-out;
     @media (max-width: 1024px) {
       height: 50px;
+      width: 100%;
     }
     @media (max-width: 576px) {
-      width: 100%;
       height: 40px;
     }
   }

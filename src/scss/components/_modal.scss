@@ -18,8 +18,8 @@
     justify-content: flex-start;
     align-items: center;
     padding: 20px;
-    @media (max-width: 480px) {
-      padding: 10px;
+    @media (max-width: 768px) {
+      padding: 20px 0 0 0;
     }
   }
   &__image {
@@ -68,6 +68,7 @@
     align-items: center;
     width: 100%;
     padding: 20px 90px 40px;
+    margin: 0 0 30px;
     &::after {
       content: "";
       position: absolute;
@@ -77,16 +78,38 @@
       height: 1px;
       background-color: var(--second-text);
     }
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+    @media (max-width: 768px) {
+      padding: 20px 0px 40px;
+    }
+  }
+  &__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 0 0 30px 0;
+    @media (max-width: 1024px) {
+      align-items: center;
+    }
   }
   &__title {
     font-size: 48px;
     font-weight: 700;
     margin: 0 0 20px;
     text-transform: uppercase;
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
   }
   &__descr {
     font-size: 20px;
     margin: 0;
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
   }
   &__link {
     display: inline-flex;
@@ -107,15 +130,34 @@
       background-color: #ee5b5b;
       box-shadow: 0 0 15px #e44545;
     }
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+    @media (max-width: 768px) {
+      font-size: 18px;
+      height: 50px;
+      font-size: 18px;
+    }
+    @media (max-width: 480px) {
+      font-size: 16px;
+    }
   }
   &__text {
     align-self: start;
-    padding: 30px;
+    padding: 0 30px;
+    margin: 0 0 30px;
     p {
       margin: 0;
     }
     p:not(:last-child) {
       margin: 0 0 20px 0;
+    }
+    @media (max-width: 768px) {
+      font-size: 14px;
+      padding: 0;
+      p:not(:last-child) {
+        margin: 0 0 15px 0;
+      }
     }
   }
   &__text-descr {
@@ -126,6 +168,13 @@
     }
     p:not(:last-child) {
       margin: 0 0 15px 0;
+    }
+    @media (max-width: 768px) {
+      font-size: 14px;
+      padding: 0;
+      p:not(:last-child) {
+        margin: 0 0 10px 0;
+      }
     }
   }
 }
