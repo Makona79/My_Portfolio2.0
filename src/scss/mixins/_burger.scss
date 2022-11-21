@@ -2,35 +2,39 @@
 
 @mixin burger {
   --burger-width: 30px;
-  --burger-height: 30px;
+  --burger-height: 23px;
   --burger-line-height: 2px;
 
-  position: relative;
-  border: none;
-  padding: 0;
-  width: var(--burger-width);
-  height: var(--burger-height);
-  color: #000;
-  background-color: transparent;
-  cursor: pointer;
+  display: none;
+  @media (max-width: 768px) {
+    position: relative;
+    display: block;
+    border: none;
+    padding: 0;
+    width: var(--burger-width);
+    height: var(--burger-height);
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 10000;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: var(--burger-line-height);
+      background-color: currentColor;
+      transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+    }
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: var(--burger-line-height);
-    background-color: currentColor;
-    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
-  }
+    &::before {
+      top: 0;
+    }
 
-  &::before {
-    top: 0;
-  }
-
-  &::after {
-    top: calc(100% - var(--burger-line-height));
+    &::after {
+      top: calc(100% - var(--burger-line-height));
+    }
   }
 
   &__line {

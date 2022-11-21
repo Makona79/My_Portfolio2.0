@@ -2,7 +2,7 @@
   --transition-time: 0.3s;
   position: fixed;
   inset: 0;
-  z-index: 1000;
+  z-index: 100000;
   background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
   overflow-y: auto;
@@ -122,6 +122,7 @@
     font-size: 20px;
     padding: 15px 25px;
     transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px #e44545;
     svg {
       fill: #fff;
       margin-right: 15px;
@@ -137,6 +138,7 @@
       font-size: 18px;
       height: 50px;
       font-size: 18px;
+      width: 70%;
     }
     @media (max-width: 480px) {
       font-size: 16px;
@@ -190,7 +192,7 @@
   position: relative;
   width: 1100px;
   min-height: 600px;
-  margin: 50px auto;
+  margin: 10px auto;
   display: none;
   vertical-align: middle;
   background-color: #fff;
