@@ -1,0 +1,84 @@
+.contact {
+   position: relative;
+   background-color: #252934;
+   height: 100vh;
+   border: 1px solid #000;
+   &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 70px 0;
+      height: 100%;
+   }
+   // .contact__title
+
+   &__title {
+      margin: 0 0 90px 0;
+      color: #fff;
+      &::after {
+         background-color: #fff;
+      }
+   }
+
+   // .contact__descr
+
+   &__descr {
+      margin: 0 0 50px;
+      color: #04c2c9;
+      text-align: center;
+   }
+   &__sci {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      @media (max-width: 768px) {
+         align-items: center;
+      }
+   }
+   &__item {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      margin: 0 0 40px 0;
+      @media (max-width: 768px) {
+         flex-direction: column;
+      }
+   }
+   &__point {
+      min-width: 350px;
+      font-size: 20px;
+      color: var(--light-color);
+      margin: 0 30px 0 0;
+      text-align: left;
+      @media (max-width: 768px) {
+         min-width: auto;
+         margin: 0 0 20px 0;
+      }
+   }
+   &__link {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      margin: 0 20px;
+      color: var(--second-text);
+      transition: all 0.3s ease;
+      font-size: 20px;
+      svg {
+         transition: all 0.3s ease;
+         fill: var(--second-text);
+         margin: 0 15px 0 0;
+         width: 25px;
+         height: 25px;
+      }
+      &:hover {
+         color: #fff;
+         svg {
+            fill: #fff;
+         }
+      }
+   }
+}
