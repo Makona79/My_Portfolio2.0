@@ -1,6 +1,6 @@
 let timer;
 let textTitleSite = document.querySelector('head title').innerText;
-console.dir(textTitleSite);
+
 
 function changeTitle(icon, text) {
   document.querySelector('head title').innerHTML = text;

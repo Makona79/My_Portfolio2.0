@@ -1,4 +1,4 @@
-console.log("кнопка");
+
 const showMore = document.querySelector(".show-more");
 const productsLength = document.querySelectorAll(".portfolio__item").length;
 let items = 6;
