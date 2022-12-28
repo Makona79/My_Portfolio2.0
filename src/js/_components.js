@@ -1,5 +1,5 @@
 import "./components/changeIco";
-import "./components/scroll";
+import "./components/arrowUp";
 import "./components/modal";
 import "./components/show-more";
 

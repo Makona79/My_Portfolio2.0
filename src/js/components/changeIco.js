@@ -8,8 +8,8 @@ function changeTitle(icon, text) {
 }
 window.onblur = () => {
   timer = setTimeout(() => {
-    changeTitle('./heart.ico', '✋Вернитесь😢🤚');
-  }, 500);
+    changeTitle('./heart.ico', 'Возвращайся! 🤚');
+  }, 5000);
 }
 window.onfocus = () => {
   clearTimeout(timer);
