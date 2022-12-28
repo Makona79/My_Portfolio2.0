@@ -118,6 +118,7 @@ a {
   color: var(--mainblack-color);
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0 0 130px 0;
   &::after {
     content: "";
     position: absolute;
@@ -132,6 +133,12 @@ a {
   }
   @media (max-width: 576px) {
     font-size: 36px;
+  }
+  @media (max-width: (1024px)) {
+    margin: 0 0 80px 0;
+  }
+  @media (max-width: (576px)) {
+    margin: 0 0 50px 0;
   }
 }
 
