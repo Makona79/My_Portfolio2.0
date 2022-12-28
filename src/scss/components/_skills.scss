@@ -11,8 +11,7 @@
     }
   }
 
-  &__title {
-  }
+ 
 
   &__list {
     display: flex;
@@ -93,7 +92,7 @@
     align-items: center;
     padding: 15px;
     box-shadow: 5px 5px 10px #056748;
-    margin-bottom: 20px;
+    margin: 0 20px 20px 0;
     transition: box-shadow 0.3s ease;
     &:hover {
       box-shadow: 10px 10px 15px #056748;
