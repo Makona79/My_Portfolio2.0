@@ -1,5 +1,5 @@
 
-const btnUp = {
+export const btnUp = {
   el: document.querySelector('.arrow-up'),
   show() {
     // удалим у кнопки класс btn-up_hide
@@ -9,7 +9,7 @@ const btnUp = {
     // добавим к кнопке класс btn-up_hide
     this.el.classList.add('arrow-up--hide');
   },
-  addEventListener() {
+  addBtn() {
     // при прокрутке содержимого страницы
     window.addEventListener('scroll', () => {
       // определяем величину прокрутки
@@ -29,4 +29,4 @@ const btnUp = {
   }
 }
 
-btnUp.addEventListener();
+

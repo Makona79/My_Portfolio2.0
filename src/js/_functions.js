@@ -6,10 +6,15 @@
 //console.log(mobileCheck());
 
 // Определение ширины экрана
-// import { isMobile, isTablet, isDesktop } from './functions/check-viewport';
-// if (isDesktop()) {
-//   console.log('...')
-// }
+import { isMobile, isTablet, isDesktop } from './functions/check-viewport';
+import { btnUp } from './components/arrowUp';
+if (isDesktop()) {
+  console.log('desktop');
+  btnUp.addBtn();
+} else if (isTablet()) {
+  console.log('tablet');
+  btnUp.addBtn();
+} else console.log('mobile');
 
 // Троттлинг функции (для ресайза, ввода в инпут, скролла и т.д.)
 // import { throttle } from './functions/throttle';
